@@ -56,7 +56,8 @@ void findWaitingTime(Process proc[], int n, int wt[]) {
     }
 }
 
-void findavgTime(Process proc[], int n) {
+void findavgTime(Process proc[], int n) 
+{
     int wt[n], tat[n], total_wt = 0, total_tat = 0;
 
     findWaitingTime(proc, n, wt);
@@ -76,5 +77,6 @@ void findavgTime(Process proc[], int n) {
 
 int main() {
     Process proc[] = { { 1, 5, 1 }, { 2, 3, 1 }, { 3, 6, 2 }, { 4, 5, 3 } };
-return 0;
+    findavgTime(proc , 4);
+    return 0;
 }
